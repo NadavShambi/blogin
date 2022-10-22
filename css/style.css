@@ -16,17 +16,18 @@
 
 @font-face {
     font-family: euro;
-    src: url(/fonts/eurofurence/eurof55.ttf);
+    src: url(../fonts/eurofurence/eurof55.ttf);
 }
 
 @font-face {
     font-family: lato-bold;
-    src: url(/fonts/lato/Lato-Bold.ttf);
+    src: url(../fonts/lato/Lato-Bold.ttf);
 }
 
 @font-face {
     font-family: lato;
-    src: url(/fonts/lato/Lato-Regular.ttf);
+    src: url(../fonts/lato/Lato-Regular.ttf);
+
 }
 
 /* basics */
@@ -153,7 +154,6 @@ a:visited {
     color: var(--pr-green);
 }
 
-
 /* main */
 
 .main-content {
@@ -173,6 +173,8 @@ a:visited {
     flex-basis: 45%;
     width: 100%;
 }
+
+
 
 .card-info {
     margin-top: 20px;
@@ -308,7 +310,7 @@ a:visited {
     }
 }
 
-.a{
+.a {
     position: absolute;
     height: 500px;
     width: 500px;
@@ -319,26 +321,26 @@ a:visited {
     display: none;
 }
 
-.a>*{
+.a>* {
     width: 80%;
     height: 50px;
     background: #eee;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: calc(100px * var(--i) + 50%);
     border-radius: 25px;
     transition: .5s;
 }
 
-.a:hover *{
-    transform: translate(-50%,-50%) rotate(45deg);
+.a:hover * {
+    transform: translate(-50%, -50%) rotate(45deg);
     background: tomato;
 }
 
-.a:hover >*:not(:nth-child(even)){
-    transform: translate(-50%,-50%) rotate(-45deg);
+.a:hover>*:not(:nth-child(even)) {
+    transform: translate(-50%, -50%) rotate(-45deg);
     background: tomato;
     box-shadow: -3px 0 5px #292929;
-    top:  50%;
+    top: 50%;
 }
